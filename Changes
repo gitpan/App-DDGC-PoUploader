@@ -1,0 +1,35 @@
+==================================================
+Changes from 1739-08-21 00:00:00 +0000 to present.
+==================================================
+
+------------------------------------------
+version 0.001 at 2013-06-04 03:17:38 +0000
+------------------------------------------
+
+  Change: bbc5952f166b6912e07a5a1194506615c94c75ce
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-04 05:12:20 +0000
+
+    Added abstract and .travis.yml 
+
+  Change: 7504bb9ce0def4ac9816d2cb4950818ad01d47ef
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-04 05:07:50 +0000
+
+    Added test 
+
+  Change: fc5747f65cdae68b744c2876cace0a1866cb85a7
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-04 05:03:37 +0000
+
+    Added requirements and... complete code 
+
+  Change: 6d13ace5f01f35c28823c9f84b6f2fcf5f5ca9b4
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-04 03:45:58 +0000
+
+    initial commit 
+
+================
+End of releases.
+================

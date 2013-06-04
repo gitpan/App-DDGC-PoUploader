@@ -1,0 +1,43 @@
+#!/usr/bin/env perl
+# PODNAME: ddgc-pouploader
+# ABSTRACT: Command line tool for uploading a po file to https://dukgo.com/
+
+binmode STDOUT, ":utf8";
+
+use App::DDGC::PoUploader;
+App::DDGC::PoUploader->new_with_options->upload_extra_argv;
+
+
+
+=pod
+
+=head1 NAME
+
+ddgc-pouploader - Command line tool for uploading a po file to https://dukgo.com/
+
+=head1 VERSION
+
+version 0.001
+
+=head1 SYNPOSIS
+
+  ddgc-uploader --user dukgouser --pass dukgopassword --domain duckduckgo-duckduckgo something.po
+
+=head2 DESCRIPTION
+
+=head1 AUTHOR
+
+Torsten Raudssus <torsten@raudss.us>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Torsten Raudssus.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
+
+__END__
+

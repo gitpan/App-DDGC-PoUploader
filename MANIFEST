@@ -1,0 +1,12 @@
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+bin/ddgc-pouploader
+dist.ini
+lib/App/DDGC/PoUploader.pm
+t/load.t
+t/release-pod-syntax.t
