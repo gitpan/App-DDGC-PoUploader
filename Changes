@@ -1,10 +1,16 @@
 ==================================================
-Changes from 1739-08-21 00:00:00 +0000 to present.
+Changes from 1739-08-26 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.001 at 2013-06-04 03:17:38 +0000
+version 0.002 at 2013-06-09 02:36:58 +0000
 ------------------------------------------
+
+  Change: b679947ff1f05f48a6d89c35c86eaa2bf333dc88
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-06-09 04:36:20 +0000
+
+    Be more verbose, and add a quiet option 
 
   Change: bbc5952f166b6912e07a5a1194506615c94c75ce
   Author: Torsten Raudssus <torsten@raudss.us>

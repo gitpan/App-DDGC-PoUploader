@@ -3,7 +3,7 @@ BEGIN {
   $App::DDGC::PoUploader::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $App::DDGC::PoUploader::VERSION = '0.001';
+  $App::DDGC::PoUploader::VERSION = '0.002';
 }
 # ABSTRACT: Command-line tool for uploading .po files to the DuckDuckGo Community Platform
 
@@ -40,7 +40,12 @@ option upload_uri => (
 	builder => 1,
 );
 
-sub _build_upload_uri { 'https://dukgo.com/translate/po_upload' }
+option quiet => (
+	is => 'ro',
+	builder => sub { 0 },
+);
+
+sub _build_upload_uri { 'https://dukgo.com/translate/po/upload' }
 
 option agent_string => (
 	is => 'ro',
@@ -96,8 +101,10 @@ sub upload_extra_argv {
 sub upload {
 	my ( $self, $file ) = @_;
 	die "File not found" unless -f $file;
+	print "Uploading ".$file."... " unless $self->quiet;
 	my $response = $self->_user_agent->request($self->get_request($file));
 	die "Error: ".$response->code if $response->is_error || $response->is_redirect;
+	print "success!\n" unless $self->quiet;
 }
 
 1;
@@ -111,7 +118,7 @@ App::DDGC::PoUploader - Command-line tool for uploading .po files to the DuckDuc
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

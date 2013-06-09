@@ -22,7 +22,7 @@ requires:
 resources:
   homepage: https://github.com/duckduckgo/p5-app-ddgc-pouploader
   repository: https://github.com/duckduckgo/p5-app-ddgc-pouploader.git
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   perl:
     version: 5.014002
